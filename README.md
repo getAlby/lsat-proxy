@@ -1,4 +1,4 @@
-# Gin-LSAT Implementation
+# Gin-LSAT Proxy
 
 An implementation of [gin-lsat](https://github.com/DhananjayPurohit/gin-lsat) middleware to demonstrate serving of static files and creating a paywall for paid resources.
 
