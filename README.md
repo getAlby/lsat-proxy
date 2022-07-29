@@ -8,7 +8,7 @@ An implementation of [gin-lsat](https://github.com/DhananjayPurohit/gin-lsat) mi
     ```shell
     go get .
     ```
-3. Create `.env` file (refer `.env_example`) and configure `LND_ADDRESS` and `MACAROON_HEX` for LND client or `LNURL_ADDRESS` for LNURL client, `LN_CLIENT_TYPE` (out of LND, LNURL) and `ROOT_KEY` (for minting macaroons). 
+3. Create `.env` file (refer `.env_example`) and configure `LND_ADDRESS` and `MACAROON_HEX` for LND client or `LNURL_ADDRESS` for LNURL client, `LN_CLIENT_TYPE` (out of LND, LNURL) `ROOT_KEY` (for minting macaroons) and `PORT`. 
 4. To start the server, run:-
     ```shell
     go run .
