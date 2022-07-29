@@ -48,26 +48,32 @@ func main() {
 
 	router.Use(lsatmiddleware.Handler)
 
-	router.GET("/:folder/:file", func(c *gin.Context) {
+	router.GET("/:file", func(c *gin.Context) {
 		lsatInfo := c.Value("LSAT").(*ginlsat.LsatInfo)
-		folder := c.Param("folder")
 		fileName := c.Param("file")
+		paidPath := fmt.Sprintf("assets/paid/%s", fileName)
+		freePath := fmt.Sprintf("assets/free/%s", fileName)
+
 		if lsatInfo.Type == ginlsat.LSAT_TYPE_FREE {
-			c.File(fmt.Sprintf("%s/%s", folder, fileName))
+			c.File(freePath)
 		} else if lsatInfo.Type == ginlsat.LSAT_TYPE_PAID {
-			filePaidType := fileNameWithoutExt(fileName) + "-lsat" + filepath.Ext(fileName)
-			if _, err := os.Stat(fmt.Sprintf("%s/%s", folder, filePaidType)); err == nil {
-				c.File(fmt.Sprintf("%s/%s", folder, filePaidType))
+			if _, err := os.Stat(paidPath); err == nil {
+				c.File(paidPath)
 			} else {
-				c.File(fmt.Sprintf("%s/%s", folder, fileName))
+				c.File(freePath)
 			}
 		} else {
-			c.JSON(http.StatusAccepted, gin.H{
-				"code":    http.StatusInternalServerError,
+			c.JSON(http.StatusBadRequest, gin.H{
+				"code":    http.StatusBadRequest,
 				"message": fmt.Sprint(lsatInfo.Error),
 			})
 		}
 	})
 
-	router.Run("localhost:8080")
+
+	port := "8080"
+	if os.Getenv("PORT") != "" {
+		port = os.Getenv("PORT")
+	}
+	router.Run(fmt.Sprintf(":%v", port))
 }
