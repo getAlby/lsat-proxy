@@ -3,7 +3,7 @@ module lsat-implementation
 go 1.18
 
 require (
-	github.com/getAlby/gin-lsat v0.0.0-20220730163713-c8d0820cb840
+	github.com/getAlby/gin-lsat v0.0.0-20220817065059-d34465606a52
 	github.com/gin-gonic/gin v1.7.7
 	github.com/joho/godotenv v1.4.0
 )

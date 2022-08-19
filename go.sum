@@ -192,6 +192,8 @@ github.com/fsnotify/fsnotify v1.4.9 h1:hsms1Qyu0jgnwNXIxa+/V/PDsU6CfLf6CNO8H7IWo
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/getAlby/gin-lsat v0.0.0-20220730163713-c8d0820cb840 h1:1m/SANQzHdEzGfXLG/u+CqyKkZJz64eY4QIXsbP/YYQ=
 github.com/getAlby/gin-lsat v0.0.0-20220730163713-c8d0820cb840/go.mod h1:47F12sP1SXpDhE3ParP739hT3fLewuW33g1fFYZJZjg=
+github.com/getAlby/gin-lsat v0.0.0-20220817065059-d34465606a52 h1:Wa/QTYX8VMJc7rbWiKLqjM4hOu8x34xJoEJydIS5KYo=
+github.com/getAlby/gin-lsat v0.0.0-20220817065059-d34465606a52/go.mod h1:47F12sP1SXpDhE3ParP739hT3fLewuW33g1fFYZJZjg=
 github.com/getsentry/raven-go v0.2.0 h1:no+xWJRb5ZI7eE8TWgIq1jLulQiIoLG0IfYxv5JYMGs=
 github.com/getsentry/raven-go v0.2.0/go.mod h1:KungGk8q33+aIAZUIVWZDr2OfAEBsO49PX4NzFV5kcQ=
 github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
