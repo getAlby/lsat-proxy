@@ -1,6 +1,6 @@
 # Gin-LSAT Proxy
 
-An implementation of [gin-lsat](https://github.com/getAlby/gin-lsat) middleware to demonstrate serving of static files and creating a paywall for paid resources.
+An implementation of [lsat-middleware](https://github.com/getAlby/lsat-middleware) middleware using Gin to demonstrate serving of static files and creating a paywall for paid resources.
 
 ## Steps to run:-
 1. Clone the repo.
