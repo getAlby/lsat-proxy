@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/getAlby/gin-lsat/ginlsat"
-	"github.com/getAlby/gin-lsat/ln"
+	"github.com/getAlby/lsat-middleware/ginlsat"
+	"github.com/getAlby/lsat-middleware/ln"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
